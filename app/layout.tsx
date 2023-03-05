@@ -1,4 +1,6 @@
-import type { Metadata } from "next"
+import 'styles/globals.scss'
+import Header from 'components/header'
+import type { Metadata } from 'next'
 
 interface IRootLayoutProps {
     children: React.ReactNode
@@ -7,7 +9,10 @@ interface IRootLayoutProps {
 export default function RootLayout({ children }: IRootLayoutProps) {
     return <html lang='pt'>
         <body>
-            {children}
+            <Header />
+            <main>
+                {children}
+            </main>
         </body>
     </html>
 }

@@ -1,5 +1,8 @@
+import Home from 'components/home'
+
 export default function Homepage() {
-    return <div>
-        <h1>João Victor</h1>
-    </div>
+    return <>
+        <Home />
+        <div style={{height: '120rem'}}></div>
+    </>
 }
