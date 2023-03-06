@@ -1,0 +1,36 @@
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8rem;
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 4.8rem;
+        line-height: 0;
+        color: var(--cyan);
+        font-weight: 700;
+    }
+
+    span {
+        color: #A3F7BF;
+        font-weight: 600;
+    }
+
+    svg {
+        font-size: 28rem;
+        filter: drop-shadow(-0.2rem 0.2rem 0.3rem black);
+    }
+
+    main {
+        text-shadow: -0.2rem 0.2rem 0.3rem black;
+    }
+
+    article {
+        max-width: 30rem;
+        text-align: justify;
+        line-height: 140%;
+    }
+}

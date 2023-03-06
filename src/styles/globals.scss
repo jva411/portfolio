@@ -22,6 +22,10 @@ body {
 
   >main {
     margin-top: var(--header-height);
+
+    >section {
+      height: calc(100vh - var(--header-height) - 2 * var(--page-padding));
+    }
   }
 }
 
@@ -44,6 +48,6 @@ ul {
 
   body {
     color: white;
-    background: #1B2430;
+    background: linear-gradient(90deg, rgba(30,38,51,1) 0%, rgba(40,52,70,1) 100%);
   }
 }
