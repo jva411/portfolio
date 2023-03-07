@@ -4,7 +4,7 @@ import styles from 'styles/components/header.module.scss'
 
 export default function Header() {
     return <header className={styles.header}>
-        <span>J</span>
+        <img src='logo.svg' />
         <nav aria-label='principal'>
             <ul className={styles.anchors}>
                 <li><a href='#home'>Início</a></li>

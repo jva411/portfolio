@@ -1,5 +1,6 @@
 import 'styles/globals.scss'
 import Header from 'components/header'
+import type { Metadata } from 'next'
 
 interface IRootLayoutProps {
     children: React.ReactNode
@@ -14,4 +15,8 @@ export default function RootLayout({ children }: IRootLayoutProps) {
             </main>
         </body>
     </html>
+}
+
+export const metadata: Metadata = {
+    icons: ['favicon.svg']
 }
