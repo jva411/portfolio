@@ -4,7 +4,10 @@ import styles from 'styles/components/header.module.scss'
 
 export default function Header() {
     return <header className={styles.header}>
-        <img src='logo.svg' />
+        <a href='https://www.linkedin.com/in/joão-victor-a49192172/' target='_blank' title='Meu Linkedin'>
+            <img src='logo.svg' />
+        </a>
+
         <nav aria-label='principal'>
             <ul className={styles.anchors}>
                 <li><a href='#home'>Início</a></li>
@@ -13,6 +16,7 @@ export default function Header() {
                 <li><a href='#footer'>Contato</a></li>
             </ul>
         </nav>
+
         <nav aria-label='contact'>
             <ul>
                 <li><a href='https://github.com/jva411' title='Meu GitHub'><BsGithub /></a></li>
