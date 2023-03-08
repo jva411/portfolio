@@ -1,0 +1,13 @@
+.about {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    background: var(--blue-dark);
+    padding: 8rem;
+
+    >div {
+        max-width: 192rem;
+        margin: 0 auto;
+    }
+}
