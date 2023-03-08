@@ -7,9 +7,8 @@ html, body {
 }
 
 html {
-  scroll-behavior: smooth;
   color-scheme: dark;
-  overflow-x: clip;
+  overflow: clip;
 
   font-size: 10px;  // 1rem = 10px
 
@@ -25,10 +24,13 @@ body {
   font-size: 1.6rem;
   color: white;
   background: linear-gradient(90deg, rgba(30,38,51,1) 0%, rgba(40,52,70,1) 100%);
-  padding: var(--page-padding);
 
   >main {
-    margin-top: var(--header-height);
+    padding: var(--page-padding);
+    padding-top: calc(var(--header-height) + var(--page-padding));
+    height: calc(100vh);
+    overflow-y: auto;
+    overflow-x: clip;
 
     >section {
       max-height: 100rem;
@@ -41,12 +43,31 @@ a {
   color: inherit;
   text-decoration: none;
 }
+ul {
+  list-style-type: none;
+}
 * {
   box-sizing: border-box;
   scroll-margin-top: var(--header-height);
+  scroll-behavior: smooth;
 }
-ul {
-  list-style-type: none;
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: RGB(255, 255, 255, 0.25) var(--blue-dark);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 1rem;
+}
+*::-webkit-scrollbar-track {
+  background: var(--blue-dark);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: RGB(255, 255, 255, 0.25);
+  border-radius: 1.6rem;
+  border: 0.2rem solid var(--blue-dark);
 }
 
 
