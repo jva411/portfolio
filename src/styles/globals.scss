@@ -7,14 +7,18 @@ html, body {
 }
 
 html {
-  font-size: 10px;  // 1rem = 10px
   scroll-behavior: smooth;
   color-scheme: dark;
   overflow-x: clip;
-}
 
-html {
-  color-scheme: dark;
+  font-size: 10px;  // 1rem = 10px
+
+  @media screen and (min-width: 2000px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 700px) {
+    font-size: 8px;
+  }
 }
 
 body {
@@ -23,15 +27,11 @@ body {
   background: linear-gradient(90deg, rgba(30,38,51,1) 0%, rgba(40,52,70,1) 100%);
   padding: var(--page-padding);
 
-  >* {
-    max-width: 192rem;
-    margin: 0 auto;
-  }
-
   >main {
     margin-top: var(--header-height);
 
     >section {
+      max-height: 100rem;
       height: calc(100vh - var(--header-height) - 2 * var(--page-padding) - 5rem);
     }
   }
@@ -47,4 +47,10 @@ a {
 }
 ul {
   list-style-type: none;
+}
+
+
+.centered {
+  max-width: 192rem;
+  margin: 0 auto;
 }

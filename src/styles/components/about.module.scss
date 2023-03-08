@@ -1,13 +1,14 @@
 .about {
+    max-width: none;
     width: 100vw;
     position: relative;
     left: 50%;
     margin-left: -50vw;
     background: var(--blue-dark);
-    padding: 8rem;
+    padding: var(--content-padding);
 
     >div {
-        max-width: 192rem;
+        max-width: calc(192rem - var(--content-padding));
         margin: 0 auto;
     }
 }
