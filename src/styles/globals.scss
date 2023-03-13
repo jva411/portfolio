@@ -29,17 +29,15 @@ body {
     padding: var(--page-padding);
     padding-top: calc(var(--header-height) + var(--page-padding));
     height: calc(100vh);
-    // overflow-y: auto;
-    // overflow-x: clip;
 
     >section {
-      max-height: 100rem;
-      height: calc(100vh - var(--header-height) - 2 * var(--page-padding) - 5rem);
+      min-height: calc(100vh - var(--header-height) - 2 * var(--page-padding) - 5rem);
 
-      @media screen and (max-height: 700px) {
-        max-height: none;
-        height: fit-content;
-      }
+      h2 {
+        color: var(--green-light);
+        font-size: 4.8rem;
+        text-shadow: -0.2rem 0.2rem 0.3rem black;
+    }
     }
   }
 }
@@ -50,6 +48,7 @@ a {
 }
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 * {
   box-sizing: border-box;

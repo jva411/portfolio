@@ -1,0 +1,92 @@
+$card-width: 35rem;
+$grid-gap: 3rem;
+
+
+.projects {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >h2 {
+            width: calc((4 * $card-width) + (3 * $grid-gap));
+
+            @media screen and (max-width: 1600px) {
+                width: calc((2 * $card-width) + (1 * $grid-gap));
+            }
+            @media screen and (max-width: 800px) {
+                width: $card-width;
+            }
+        }
+
+        ul {
+            display: grid;
+            margin-top: 5rem;
+            gap: $grid-gap;
+            grid-template-columns: repeat(4, $card-width);
+
+            @media screen and (max-width: 1600px) {
+                grid-template-columns: repeat(2, $card-width);
+            }
+            @media screen and (max-width: 800px) {
+                grid-template-columns: repeat(1, $card-width);
+            }
+
+            >li {
+                display: flex;
+                height: 21rem;
+                border-radius: 1.6rem;
+                overflow: hidden;
+                transition: 0.2s ease-in;
+                background: var(--gray-dark);
+
+                >a {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    >h3 {
+                        visibility: hidden;
+                        transition: 0.2s ease-in;
+                        font-size: 2.8rem;
+                        font-weight: bold;
+                        color: var(--cyan);
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 12rem;
+                        height: 12rem;
+                        border-radius: 100%;
+                        background: black;
+                    }
+                }
+
+                &.CG {
+                    background-image: url(https://github.com/jva411/ComputerGraphics/raw/master/screenshots/2022-12-16_14-28-34.png);
+                    background-position: 50% 30%;
+                    background-size: 130%;
+                }
+
+                &.SpotPer {
+                    background-image: url(https://github.com/GabrielPassos25/SpotPer-FBD/raw/main/front/assets/Screen%20Shot%202021-03-17%20at%2020.47.04.png);
+                    background-position: 90% 30%;
+                }
+
+                &:hover {
+                    transform: scale(110%);
+
+                    >a {
+                        background-color: #00000070;
+
+                        >h3 {
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -10,7 +10,7 @@ export default function About() {
     return <section id='about' className={styles.about}>
         <div className='centered'>
             <div>
-                <h2 className='outline-text'>Sobre</h2>
+                <h2>Sobre</h2>
                 <div></div>
             </div>
             <div>
