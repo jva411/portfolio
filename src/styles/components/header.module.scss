@@ -20,6 +20,12 @@
 
         >a {
             height: 4.8rem;
+            font-size: 2.4rem;
+            height: fit-content;
+
+            svg {
+                margin-left: 0.8rem;
+            }
 
             img {
                 width: 4.8rem;
@@ -27,6 +33,16 @@
 
                 &:hover {
                     transform: rotate(10deg) scale(105%);
+                }
+            }
+
+            @media screen and (max-width: 450px) {
+                img {
+                    width: 3.6rem;
+                }
+
+                svg {
+                    display: none;
                 }
             }
         }
@@ -39,7 +55,12 @@
 
             &.anchors {
                 font-size: 2rem;
-                width: 35rem;
+                width: fit-content;
+                gap: 1.5rem;
+
+                @media screen and (max-width: 450px) {
+                    font-size: 1.6rem;
+                }
             }
         }
     }
