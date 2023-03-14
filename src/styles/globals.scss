@@ -81,6 +81,16 @@ ul {
 }
 
 
+.full-width-bg {
+    max-width: none;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    background: var(--blue-dark);
+    padding: var(--content-padding);
+}
+
 .centered {
   max-width: 192rem;
   margin: 0 auto;

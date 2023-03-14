@@ -7,7 +7,7 @@ function calculateAge() {
 }
 
 export default function About() {
-    return <section id='about' className={styles.about}>
+    return <section id='about' className={styles.about + ' full-width-bg'}>
         <div className='centered'>
             <div>
                 <h2>Sobre</h2>

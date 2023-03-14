@@ -1,0 +1,28 @@
+.skills {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8rem;
+
+        &[title]::before {
+            content: attr(title);
+
+            position: relative;
+            left: -2rem;
+
+            font-size: 2.8rem;
+            color: var(--cyan);
+            font-weight: 600;
+        }
+
+        li {
+            background-color: var(--orange);
+            padding: 0.8rem 2rem;
+            border-radius: 0.4rem;
+            font-size: 2rem;
+        }
+    }
+}
