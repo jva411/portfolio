@@ -82,13 +82,17 @@ ul {
 
 
 .full-width-bg {
-    max-width: none;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    margin-left: -50vw;
-    background: var(--blue-dark);
-    padding: var(--content-padding);
+  max-width: none;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  background: var(--blue-dark);
+  padding: var(--content-padding);
+
+  @media screen and (max-width: 500px) {
+    padding: calc(var(--content-padding) / 1.5);
+  }
 }
 
 .centered {

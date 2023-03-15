@@ -30,6 +30,12 @@ export default function Skills() {
                 <li>Kotlin</li>
             </ul>
 
+            <ul title='Cloud'>
+                <li>AWS</li>
+                <li>Docker</li>
+                <li>GitLab CI/CD</li>
+                <li>Nginx</li>
+            </ul>
         </div>
     </section>
 }
