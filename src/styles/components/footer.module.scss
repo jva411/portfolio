@@ -1,0 +1,57 @@
+$mt: calc(-1 * var(--page-padding));
+$tag-height: 3rem;
+$tag-width: 32rem;
+
+.footer {
+    position: relative;
+    margin-top: calc($mt - $tag-height);
+    margin-bottom: $mt;
+    padding: 1rem;
+    padding-top: 5rem;
+    background-color: var(--gray-dark);
+
+    clip-path: polygon(
+        0 $tag-height,
+        calc(50% - $tag-width / 2) $tag-height,
+        calc(50% - $tag-width / 2.5) 0,
+        calc(50% + $tag-width / 2.5) 0,
+        calc(50% + $tag-width / 2) $tag-height,
+        100% $tag-height,
+        100% 100%,
+        0% 100%
+    );
+
+    >small {
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    >nav {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            height: fit-content;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            a {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            svg {
+                font-size: 2rem;
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import 'styles/globals.scss'
 import Header from 'components/header'
+import Footer from 'components/footer'
 import type { Metadata } from 'next'
 
 interface IRootLayoutProps {
@@ -13,6 +14,7 @@ export default function RootLayout({ children }: IRootLayoutProps) {
             <main>
                 {children}
             </main>
+            <Footer />
         </body>
     </html>
 }
