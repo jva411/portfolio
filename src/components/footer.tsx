@@ -4,8 +4,8 @@ import styles from 'styles/components/footer.module.scss'
 
 
 export default function Footer() {
-    return <footer className={styles.footer}>
-        <small>Copyright &copy; 2023 by João Victor</small>
+    return <footer className={styles.footer} id='footer'>
+        <small>&copy; 2023 Copyright - João Victor</small>
         <nav aria-label='contact'>
             <ul>
                 <li>
