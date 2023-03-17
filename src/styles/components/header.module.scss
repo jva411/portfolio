@@ -36,7 +36,7 @@
                 }
             }
 
-            @media screen and (max-width: 450px) {
+            @media screen and (max-width: 380px) {
                 img {
                     width: 3.6rem;
                 }
@@ -56,10 +56,15 @@
             &.anchors {
                 font-size: 2rem;
                 width: fit-content;
-                gap: 1.5rem;
+                gap: 3.5rem;
 
-                @media screen and (max-width: 450px) {
+                a:hover {
+                    text-decoration: underline;
+                }
+
+                @media screen and (max-width: 500px) {
                     font-size: 1.6rem;
+                    gap: 1.5rem;
                 }
             }
         }

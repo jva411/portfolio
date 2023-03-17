@@ -6,14 +6,14 @@ export default function Skills() {
         <div className='centered'>
             <h2>Habilidades</h2>
 
-            <ul title='Front End'>
+            <ul data-title='Front End'>
                 <li>React</li>
                 <li>NextJS</li>
                 <li>SASS</li>
                 <li>TailwindCSS</li>
             </ul>
 
-            <ul title='Back End'>
+            <ul data-title='Back End'>
                 <li>Flask</li>
                 <li>Express</li>
                 <li>REST</li>
@@ -21,7 +21,7 @@ export default function Skills() {
                 <li>MySQL</li>
             </ul>
 
-            <ul title='Linguagens'>
+            <ul data-title='Linguagens'>
                 <li>Javascript</li>
                 <li>Typescript</li>
                 <li>Python</li>
@@ -30,7 +30,7 @@ export default function Skills() {
                 <li>Kotlin</li>
             </ul>
 
-            <ul title='Cloud'>
+            <ul data-title='Cloud'>
                 <li>AWS</li>
                 <li>Docker</li>
                 <li>GitLab CI/CD</li>

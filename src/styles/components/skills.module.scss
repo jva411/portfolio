@@ -8,8 +8,8 @@
         align-items: center;
         margin-top: 12rem;
 
-        &[title]::before {
-            content: attr(title);
+        &[data-title]::before {
+            content: attr(data-title);
 
             position: absolute;
             top: -4.5rem;
