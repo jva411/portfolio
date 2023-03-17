@@ -24,9 +24,9 @@ export default function Projects() {
                 <h2>Projetos</h2>
                 <ul>
                     <Project name='CG' title='Computação Gráfica' href='https://github.com/jva411/ComputerGraphics' />
-                    <Project name='Damas' title='Jogo de Damas' href='https://github.com/GabrielPassos25/SpotPer-FBD' />
-                    <Project name='CCBR' title='CCBR' href='' />
-                    <Project name='SpotPer' title='SpotPer' href='' />
+                    <Project name='Damas' title='Jogo de Damas' href='https://github.com/jva411/faculdade/tree/master/FUP/Trabalho%20Final' />
+                    <Project name='CCBR' title='CCBR' href='https://github.com/jva411/ccbr' />
+                    <Project name='SpotPer' title='SpotPer' href='https://github.com/GabrielPassos25/SpotPer-FBD' />
                 </ul>
             </nav>
         </div>
