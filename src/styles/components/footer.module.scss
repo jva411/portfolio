@@ -2,24 +2,38 @@ $mt: calc(-1 * var(--page-padding));
 $tag-height: 3rem;
 $tag-width: 32rem;
 
+@function make-path($variant) {
+    @return polygon(
+        0 $tag-height,
+        calc(50% - $tag-width / 2 + $variant) $tag-height,
+        calc(50% - $tag-width / 2.5 + $variant) 0,
+        calc(50% + $tag-width / 2.5 - $variant) 0,
+        calc(50% + $tag-width / 2 - $variant) $tag-height,
+        100% $tag-height,
+        100% 100%,
+        0% 100%
+    );
+}
+
 .footer {
     position: relative;
     margin-top: calc($mt - $tag-height);
     margin-bottom: $mt;
     padding: 1rem;
     padding-top: 5rem;
-    background-color: var(--gray-dark);
+    background-color: var(--orange);
+    clip-path: make-path(0px);
 
-    clip-path: polygon(
-        0 $tag-height,
-        calc(50% - $tag-width / 2) $tag-height,
-        calc(50% - $tag-width / 2.5) 0,
-        calc(50% + $tag-width / 2.5) 0,
-        calc(50% + $tag-width / 2) $tag-height,
-        100% $tag-height,
-        100% 100%,
-        0% 100%
-    );
+    &:before {
+        content: '';
+        width: 100%;
+        height: calc(100% - 0.6rem);
+        position: absolute;
+        top: 0.6rem;
+        left: 0;
+        background-color: var(--gray-dark);
+        clip-path: make-path(0.2rem);
+    }
 
     >small {
         position: absolute;
@@ -29,6 +43,7 @@ $tag-width: 32rem;
     }
 
     >nav {
+        position: relative;
         display: flex;
         justify-content: center;
 
