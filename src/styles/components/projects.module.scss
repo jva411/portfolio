@@ -65,10 +65,13 @@ $grid-gap: 3rem;
                 }
 
                 &.CG {
-                    background-image: url('/cg.webp');
+                    background-image: url('/CG.webp');
                 }
                 &.Damas {
-                    background-image: url('/damas.webp');
+                    background-image: url('/Damas.webp');
+                }
+                &.CCBR h3 {
+                    opacity: 1;
                 }
                 &.SpotPer {
                     background-image: url('/SpotPer.webp');
